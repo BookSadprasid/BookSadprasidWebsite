@@ -1,0 +1,66 @@
+{
+  "name": "books",
+  "private": true,
+  "description": "Book Sadprasid Website",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx --node-arg '-r esm' gatsby build",
+    "develop": "npx --node-arg '-r esm' gatsby develop -H 0.0.0.0",
+    "start": "npm run develop",
+    "serve": "npx --node-arg '-r esm' gatsby serve",
+    "clean": "gatsby clean",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "eslintConfig": {
+    "globals": {
+      "__PATH_PREFIX__": true
+    },
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "error"
+    },
+    "extends": [
+      "react-app",
+      "plugin:prettier/recommended"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.27",
+    "@emotion/styled": "^10.0.27",
+    "acorn": "^6.4.1",
+    "esm": "^3.2.25",
+    "gatsby": "^2.21.21",
+    "gatsby-plugin-emotion": "^4.1.18",
+    "gatsby-plugin-react-helmet": "^3.1.18",
+    "ink": "^2.7.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-config-react-app": "^5.1.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1",
+    "typescript": "^2.9.1"
+  },
+  "resolutions": {
+    "chokidar": "^3"
+  }
+}
